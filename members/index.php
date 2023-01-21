@@ -15,6 +15,7 @@
                         <th scope="col">#</th>
                         <th scope="col">Foto</th>
                         <th scope="col">Nama</th>
+                        <th scope="col">NIM</th>
                         <th scope="col">Alamat</th>
                         <th scope="col">Nomor Telepon</th>
                         <th scope="col">Tanggal Registrasi</th>
@@ -34,6 +35,7 @@
                                 height="50px">
                         </td>
                         <td><?php echo $member['name']; ?></td>
+                        <td><?php echo $member['nim']; ?></td>
                         <td><?php echo $member['address']; ?></td>
                         <td><?php echo $member['phone_number']; ?></td>
                         <td><?php echo $member['registration_date']; ?></td>

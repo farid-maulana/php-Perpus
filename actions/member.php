@@ -5,16 +5,34 @@ function getDataMember()
 {
     $members = array(
         array(
-            'name' => 'Farlan',
-            'phone_number' => '085823723432',
-            'address' => 'Jl. Kita Berbeda Meskipun Saling Sayang',
+            'nim' => '2206130079',
+            'name' => 'Leo Ardianto',
+            'phone_number' => '083853522799',
+            'address' => 'Lumajang',
             'photo_profile' => 'assets/images/photo/user.png',
             'registration_date' => date('d F Y'),
         ),
         array(
-            'name' => 'Laravelo',
-            'phone_number' => '082344523743',
-            'address' => 'Jl. Menuju Kebaikan',
+            'nim' => '2206130072',
+            'name' => 'Zakaria Pranata',
+            'phone_number' => '082142494272',
+            'address' => 'Malang',
+            'photo_profile' => 'assets/images/photo/user.png',
+            'registration_date' => date('d F Y'),
+        ),
+        array(
+            'nim' => '2206130090',
+            'name' => 'Nahason Umbu Dagha',
+            'phone_number' => '085334030103',
+            'address' => 'Sumba Tengah',
+            'photo_profile' => 'assets/images/photo/user.png',
+            'registration_date' => date('d F Y'),
+        ),
+        array(
+            'nim' => '2206130018',
+            'name' => 'Iman Krisna Pane',
+            'phone_number' => '081358294812',
+            'address' => 'Malang',
             'photo_profile' => 'assets/images/photo/user.png',
             'registration_date' => date('d F Y'),
         ),
@@ -57,6 +75,7 @@ function storeNewMember()
 
     $data = array(
         'name' => $_POST['name'],
+        'nim' => $_POST['nim'],
         'phone_number' => $_POST['phone_number'],
         'address' => $_POST['address'],
         'photo_profile' => $fileDestination,
@@ -95,6 +114,7 @@ function updateMember($id)
 
     $data = array(
         'name' => $_POST['name'],
+        'nim' => $_POST['nim'],
         'phone_number' => $_POST['phone_number'],
         'address' => $_POST['address'],
         'photo_profile' => $fileDestination,

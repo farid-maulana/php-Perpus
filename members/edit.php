@@ -11,9 +11,9 @@
                         placeholder="Masukkan nama lengkap">
                 </div>
                 <div class="col mb-3">
-                    <label for="phone_number" class="form-label">Nomor Telepon</label>
-                    <input type="text" class="form-control" id="phone_number" name="phone_number"
-                        value="<?php echo $member['phone_number']; ?>" placeholder="Masukkan nomor telepon">
+                    <label for="nim" class="form-label">NIM</label>
+                    <input type="text" class="form-control" id="nim" name="nim" value="<?php echo $member['nim']; ?>"
+                        placeholder="Masukkan nomor induk mahasiswa">
                 </div>
             </div>
             <div class="row">
@@ -24,6 +24,11 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col mb-3">
+                    <label for="phone_number" class="form-label">Nomor Telepon</label>
+                    <input type="text" class="form-control" id="phone_number" name="phone_number"
+                        value="<?php echo $member['phone_number']; ?>" placeholder="Masukkan nomor telepon">
+                </div>
                 <div class="col mb-3">
                     <label for="photo_profile" class="form-label">Foto Anggota</label>
                     <input type="file" class="form-control" id="photo_profile" name="photo_profile"
